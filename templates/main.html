@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <body class="bg-custom">
+        <!-- nav section -->
+    {% include 'snippets/navbar.html' %}
+    <!-- background section -->
+    {% include 'snippets/background.html' %}
+    <!-- latestpieces section -->
+    {% include 'snippets/display.html' %}
+    <!-- latest exibitions -->
+    {% include 'snippets/exibition.html' %}
+    <!-- artists -->
+    {% include 'snippets/artists.html' %}
+    <!-- footer -->
+    {% include 'snippets/footer.html' %}
+    </body>
+
+    
+
+    {% endblock %}

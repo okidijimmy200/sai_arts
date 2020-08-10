@@ -1,0 +1,88 @@
+//////*How to set the navbar*///////////////////////////
+#header-1 {
+    .bg-custom {
+      //opacity:0.7;
+      background: rgb(255, 255, 255);
+    }
+    div {
+      ul {
+        a {
+          color: $myColor;
+          font-size: 1.8rem;
+          &:hover {
+            color: black;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-menu {
+    a {
+      font-size: 14px;
+    }
+  }
+  .dropdown {
+    margin-top: -5px;
+  }
+  .custom-toggler.navbar-toggler {
+    border: 2px solid $myColor;
+  }
+  .custom-toggler {
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(80,170,178, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-toggler:active {
+    @extend .navbar-toggler:focus;
+  }
+  .navbar-toggler-icon:focus {
+    @extend .navbar-toggler:focus;
+  }
+ 
+  .container1 {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+    grid-auto-rows: auto;
+  }
+
+  //////////////////displayMain section
+  .displayMain {
+    padding: 5rem;
+    background-color: #fff;
+  }
+
+  .exibitionMain {
+    padding: 0 5rem 5rem 5rem;
+  }
+
+  //////////////header primary
+  .heading-primary {
+    display: flex;
+    flex-direction: column;
+
+    &--main{
+      color: #231f20;
+      line-height: 1.5;
+      text-transform: capitalize;
+      font-size: 200%;
+      font-weight: 400;
+    }
+
+    &--sub {
+      color: #231f20;
+      letter-spacing: 1;
+      text-transform: none;
+      line-height: 1;
+      font-size: 100%;
+      font-weight: 300;
+    }
+  }
