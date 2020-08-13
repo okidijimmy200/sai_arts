@@ -1,25 +1,31 @@
-  <div class="container1">
+{% load static  %}
+
+{% block content %}
+  <div class="container1 container1--1">
+    {% for object in home %}
     <div class="card">
+      {% if object.upload  %}
       <div class="card-header">
-        <img src="../../static/images/SAM_2167.JPG" alt="" />
+        <img src="{{ object.upload.url }}" alt="" />
       </div>
+      {% endif %}
       <div class="card-body">
         <span class="tag tag-teal">Technology</span>
         <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-          tenetur distinctio neque?
+        <p>{{ object.body|truncatechars:150|linebreaks }}
         </p>
         <div class="user">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg" alt="" />
+          <img src="{{ object.upload.url }}" alt="" />
           <div class="user-info">
-            <h5>Jerome Walton</h5>
-            <small>2h ago</small>
+            <h5>{{ object.artist }}</h5>
+            <small>{{ object.publish_date }}</small>
+            <a href="{{ object.get_absolute_url }}" class="btn-text">click me &rarr;</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="card">
+    {% endfor %}
+    <!-- <div class="card">
       <div class="card-header">
         <img src="../../static/images/sai ART Galler-Gulu.JPG" alt="" />
       </div>
@@ -41,8 +47,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="card">
+    </div> -->
+    <!-- <div class="card">
       <div class="card-header">
         <img src="../../static/images/the Vocalist - Sai ARTs.jpg" alt="" />
       </div>
@@ -61,6 +67,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
+  {% endblock %}

@@ -409,8 +409,7 @@ html {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 400px; }
+  overflow: hidden; }
 
 .card-header {
   padding: 0 !important; }
@@ -568,11 +567,14 @@ html {
 
 .container1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
   width: 100%;
   margin: auto;
   grid-auto-rows: auto; }
+  .container1--2 {
+    padding: 4rem;
+    margin-top: 10rem; }
 
 .displayMain {
   padding: 5rem;

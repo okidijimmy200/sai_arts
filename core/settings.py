@@ -124,6 +124,11 @@ STATIC_URL = '/static/'
 
 STATIC_URL = '/static/'
 
+
+parent_dir = os.path.abspath(os.path.dirname(__file__))
+MEDIA_ROOT = os.path.join(parent_dir, 'media/')
+MEDIA_URL = '/media/'
+
 # making the static file global
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"), 
