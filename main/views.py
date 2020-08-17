@@ -4,17 +4,26 @@ from .models import SaiArts
 # Create your views here.
 
 def home_view(request):
-    home = SaiArts.objects.all()[:3]
-    context = {'home': home}
+    home = SaiArts.created.all()[:3]
+    exibited = SaiArts.exibited.all()[:3]
+    context = {'home': home,
+                'exibited': exibited}
     template = 'main.html'
     return render(request, template, context)
 
 # lastestPieces all Page
 
 def all_artPieces(request):
-    home = SaiArts.objects.all()
+    home = SaiArts.created.all()
     context = {'home': home}
     template = 'allArtPieces.html'
+    return render(request, template, context)
+
+# all exibited art pieces
+def all_exibited(request):
+    exibited = SaiArts.exibited.all()
+    context = {'exibited': exibited}
+    template = 'allExibitedPieces.html'
     return render(request, template, context)
 
 # artPieces detail view

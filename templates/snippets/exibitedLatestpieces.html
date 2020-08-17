@@ -1,0 +1,31 @@
+{% load static  %}
+
+{% block content %}
+  <div class="container1 container1--1">
+    {% for object in exibited %}
+    <div class="card">
+      {% if object.upload  %}
+      <div class="card-header">
+        <img src="{{ object.upload.url }}" alt="" />
+      </div>
+      {% endif %}
+      <div class="card-body">
+        <span class="tag tag-teal">Technology</span>
+        <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
+        <p>{{ object.body|truncatechars:150|linebreaks }}
+        </p>
+        <div class="user">
+          <img src="{{ object.upload.url }}" alt="" />
+          <div class="user-info">
+            <h5>{{ object.artist }}</h5>
+            <small>{{ object.publish_date }}</small>
+            <a href="{{ object.get_absolute_url }}" class="btn-text">click me &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    
+
+  </div>
+  {% endblock %}
