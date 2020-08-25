@@ -32,6 +32,12 @@ def art_detail(request, artpiece):
 
     return render(request, 'artDetail.html', {'artpiece': artpiece})
 
+# artpiece exibition view
+def artExibition_detail(request, artpiece):
+    artexibited = get_object_or_404(SaiArts, slug=artpiece)
+
+    return render(request, 'artExibitedDetail.html', {'artexibited ': artexibited })
+
 
 
 # about section

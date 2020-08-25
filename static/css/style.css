@@ -600,6 +600,91 @@ html {
     font-size: 100%;
     font-weight: 300; }
 
+.section-detail {
+  padding: 1rem 0;
+  background-color: #fff;
+  margin-top: 14rem; }
+
+.containerD {
+  display: flex;
+  margin: 2rem auto;
+  max-width: 114rem; }
+
+.detailImage {
+  flex: 0 0 45%;
+  margin-right: 4rem; }
+
+.contentBody {
+  flex: 1; }
+
+.detailCard {
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 1rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  position: relative;
+  height: 50rem; }
+  .detailCard__picture {
+    background-size: cover; }
+    .detailCard__picture--1 {
+      width: 100%;
+      height: 50rem; }
+
+.content {
+  padding: 2rem 5rem;
+  height: 25rem; }
+
+.heading-secondary {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .2rem; }
+
+.heading-tetiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .heading-tetiary--1 {
+    text-transform: capitalize;
+    float: right; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.buttonClick, .buttonClick:link, .buttonClick:visited {
+  position: absolute;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  left: 23rem;
+  padding: 10px 25px;
+  border: 1px solid #ebebeb;
+  border-radius: 50px;
+  font-family: 'neuzeit-grotesk', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .875em;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #303336;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 300ms; }
+
+.buttonClick:hover {
+  transform: translateY(-0.3rem);
+  /* adding box-show on hover. since we dont want offset in x-direction */
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border: 1px solid #bebebe; }
+
+.buttonClick:active, .buttonClick:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
 #intro .holo {
   margin: auto;
   text-align: center; }

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <body class="bg-custom">
+        <!-- nav section -->
+    {% include 'snippets/navbar.html' %}
+    <!-- detaillPiece-->
+    <section class="section-detail">
+        <div class="containerD">
+            <div class="detailImage">
+                <div class="detailCard">
+                    {% if artpiece.upload %}
+                    <div class="detailCard__picture">
+                        <img src="{{ artpiece.upload.url }}" alt="" class="detailCard__picture--1">
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="contentBody">
+                <div class="content">
+                    <h1 class="heading-secondary">{{ artpiece.name }}</h1>
+                    <p class="paragraph">{{ artpiece.body }}</p>
+
+                    <h1 class="heading-tetiary--1">
+                        <strong>...By {{ artpiece.artist }}</strong></h1>   
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    
+    <!-- footer -->
+    {% include 'snippets/footer.html' %}
+    </body>
+
+    
+
+    {% endblock %}

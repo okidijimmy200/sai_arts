@@ -1,4 +1,4 @@
-<section class="exibitionMain">
+<section class="exibitionMain" id="exibitions">
     <div class="u-margin-bottom-medium">
         <h2 class="heading-primary">
             <span class="heading-primary--main">Exhibitions</span>
@@ -9,7 +9,7 @@
     {% include 'snippets/exibitedLatestpieces.html' %}
     <div class="u-center-text u-margin-top-medium">
         <!-- btn is green -->
-        <a href="#" class="button button--white">View All</a>
+        <a href="{% url 'main:allexibitedpieces' %}" class="button button--white">View All</a>
         
     </div>
 </section>
