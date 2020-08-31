@@ -21,6 +21,12 @@
             <small>{{ object.publish_date }}</small>
             <a href="{{ object.get_absolute_url }}" class="btn-text">click me &rarr;</a>
           </div>
+          <a href="{{ object.get_absolute_url }}" class="buttonClick buttonClick--1">READ MORE 
+            <svg class="arrow__icon">
+              <!-- to use the svg, we use use xlink -->
+              <use xlink:href="../static/sprite.svg#icon-arrow-right"></use>
+          </svg>
+          </a>
         </div>
       </div>
     </div>

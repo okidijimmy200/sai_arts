@@ -8,6 +8,10 @@
   }
   .card-header{
       padding: 0 !important;
+
+      &--picture{
+        background-size: cover;
+      }
   }
   .card-header img {
     width: 100%;

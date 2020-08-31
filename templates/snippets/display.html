@@ -9,7 +9,12 @@
     {% include 'snippets/latestpieces.html' %}
     <div class="u-center-text u-margin-top-medium">
         <!-- btn is green -->
-        <a href="{% url 'main:allartpieces' %}" class="button button--white">View All</a>
+        <a href="{% url 'main:allartpieces' %}" class="button button--white">
+            <svg class="arrow__icon">
+                <!-- to use the svg, we use use xlink -->
+                <use xlink:href="../static/sprite.svg#icon-plus"></use>
+            </svg>
+            View All</a>
         
     </div>
 </section>
