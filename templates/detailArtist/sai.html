@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <body class="bg-custom">
+        <!-- nav section -->
+    {% include 'snippets/navbar.html' %}
+    <!-- detaillPiece-->
+    <section class="section-detail">
+        <div class="containerD">
+            <div class="detailImage">
+                <div class="detailCard">
+                    <div class="detailCard__picture">
+                        <img src="../../static/images/SAM_2169.JPG" alt="" class="detailCard__picture--1">
+                    </div>
+                </div>
+            </div>
+            <div class="contentBody">
+                <div class="content">
+                    <h1 class="heading-secondary">
+                        SAI
+                    </h1>
+                    <p class="paragraph">
+                        Born Feb1989,Peter Sai is a Ugandan visual artist from the post war region of Northern Uganda whose art depicts the question about, identity and explores the elements that make us human such as traditional dance, beauty, Togetherness, love, joy and courtship: 
+Peter sai mainly dwells in mixed media art that involves the use of more than one medium or material to create an art piece mainly piece of clothes and plastics, Abstracts, sculpture and Graphic designs among others. 
+He is also the art coordinator at GYCO Art and Education Academy, whose vision is working on the mindset of youth that are directly or indirectly affected by aftermath of war to unlock their full potential. - So that they may strive to flourish and grow in freedom and liberty, pursue their dreams and promote the lasting welfare of Northern Uganda.
+
+                    </p>
+                    <h1 class="heading-secondary">
+                        SELECTED EXHIBITIONS
+                    </h1>
+                    <p class="paragraph">
+                        Below are chosen artworks whose aim is to depict my works mainly mixed media collage and abstract paintings to objects in various categories covering various subjects that I am motivated to draw upon
+
+                    </p>
+                    <div class="exibitionDates">
+                        <div class="exibitionDate1">
+                            Year: 2020
+                            <div class="exibitionLocation">
+                                <ul>
+                                    <li>  Bvlgari Virtual Exhibition (Zurich, Switzerland) </li>
+                                </ul>
+                              
+                            </div>
+                            Year: 2019
+                            <div class="exibitionLocation">
+                                <ul>
+                                    <li> YAA - Young Art Auction (Vienna, Austria) </li>
+                                    <li>Solo Art Exhibition at Oasis Hotel (Gulu, Uganda)</li>
+                                </ul>
+                               
+                            </div>
+                        </div>
+                        <div class="exibitionDate2">
+                            Year: 2018
+                            <div class="exibitionLocation">
+                                <ul>
+                                    <li>  YAA - Young Art Auction (Vienna, Austria) </li>
+                                </ul>
+                              
+                            </div>
+                            Year: 2017
+                            <div class="exibitionLocation">
+                                <ul>
+                                    <li> YAA - Young Art Auction (Vienna, Austria) </li>
+                                </ul>
+                               
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <h1 class="heading-tetiary--1">
+                        <strong></strong></h1>   
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <style>
+        .exibitionDates {
+            display: flex;
+            justify-content: space-between;
+        }
+        .exibitionDate1, .exibitionDate2 {
+            font-size: 1.1rem;
+        }
+    </style>
+    
+    <!-- footer -->
+    {% include 'snippets/footer.html' %}
+    </body>
+
+    
+
+    {% endblock %}

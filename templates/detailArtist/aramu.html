@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <body class="bg-custom">
+        <!-- nav section -->
+    {% include 'snippets/navbar.html' %}
+    <!-- detaillPiece-->
+    <section class="section-detail">
+        <div class="containerD">
+            <div class="detailImage">
+                <div class="detailCard">
+                    <div class="detailCard__picture">
+                        <img src="../../static/images/SAM_2169.JPG" alt="" class="detailCard__picture--1">
+                    </div>
+                </div>
+            </div>
+            <div class="contentBody">
+                <div class="content">
+                    <h1 class="heading-secondary">
+                        Aramu Bito 
+                    </h1>
+                    <p class="paragraph">
+                        Aramu Bito is a Ugandan creative writer, a scholar and a recording underground rapper based in Gulu, Custom Corner whose works explores African culture, identity, history, philosophy, religion, politics, sociology, anthropology, education, economy and problems among others.
+Aramu Bito is also the founder of Boo-Kec Rap music which specifically works on songs that explore and expose the causes, effects and solutions to war, domestic violence, child abuse, crimes, drug abuse, poverty, prostitution, corruption and trauma in the now post war region of northern Uganda with an aim of restoring mental health, peace, prosperity, unity, love, positive attitude and freedom among the youth for a better social transformation.
+He is also a teacher of literature in English and both English and Chinese language with fluency and ability in public speaking with the vision of empowering the post war traumatized youth with attitude and skills that can make them achieve their dreams.
+
+
+                    </p>
+                   
+                    <h1 class="heading-tetiary--1">
+                        <strong></strong></h1>   
+                </div>
+            </div>
+           
+        </div>
+        <div class="containerE">
+            <h1 class="heading-secondary centre">
+                CREATIVE WRITINGS & Songs
+            </h1> 
+           
+            <div class="exibitionDates">
+                <div class="exibitionDate1">
+                    <h1 class="heading-tetiary centre">
+                        A. CREATIVE WRITINGS</h1>
+                        <div class="exibitionSeparate">
+                        <div class="exibitionSeparate--1">
+                            Year: 2020
+                            <div class="exibitionLocation">
+                                <ul>
+                                    <li>My Akello </li>
+                                    <li>Like A Reply Letter </li>
+                                    
+                                </ul>
+                              
+                            </div>
+                            Year: 2019
+                            <div class="exibitionLocation">
+                                <ul>
+                                    <li>The Last Supper </li>
+                                    <li>She</li>
+                                    <li>Born Again</li>
+                                </ul>
+                               
+                            </div>
+                        </div>
+                        <div class="exibitionSeparate--2">
+                            Year: 2018
+                    <div class="exibitionLocation">
+                        <ul>
+                            <li>The Last Supper </li>
+                            <li>She</li>
+                            <li>Born Again</li>
+                        </ul>
+                       
+                    </div>
+                    Year: 2017
+                    <div class="exibitionLocation">
+                        <ul>
+                            <li>The Last Supper </li>
+                            <li>She</li>
+                            <li>Born Again</li>
+                        </ul>
+                       
+                    </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="exibitionDivide"></div>
+                <div class="exibitionDate2">
+                    <h1 class="heading-tetiary centre">
+                        B. SONGS (ARAMU REBEL PRINCE)</h1>
+                        <div class="exibitionSeparate">
+                            <div class="exibitionSeparate--1">
+                                Year: 2020
+                                <div class="exibitionLocation--1">
+                                    <ul>
+                                        <li>Bedo Gulu (feat. J.O 12) Produced by Richard of Touch Records  </li>
+                                        <li>Wang ki wang (feat. J.O 12) Produced by Ushai of Complex Studio  </li>
+                                        
+                                    </ul>
+                                  
+                                </div>
+                                Year: 2019
+                                <div class="exibitionLocation">
+                                    <ul>
+                                        <li>Lewic (feat. J.O 12) by Produced Tonny E of Phat Boys Records </li>
+                                        <li>Kwo Labongo Lacwec. Produced by Richard of Touch Records </li>
+                                    </ul>
+                                   
+                                </div>
+                            </div>
+                            <div class="exibitionSeparate--2">
+                                Year: 2018
+                        <div class="exibitionLocation">
+                            <ul>
+                                <li>Arabo Rap. Produced by Rap D of Zero P Records – </li>
+                                <li>Rap Waka. Produced by Rap D of Zero P Records </li>
+                                <li>Born Again</li>
+                            </ul>
+                           
+                        </div>
+                        Year: 2017
+                        <div class="exibitionLocation">
+                            <ul>
+                                <li>Lok Lobo. Produced by Richard of Touch Records  </li>
+                                <li>Too Larac. (feat. Caretaker the legend) Produced by Rap D of Zero P Records </li>
+                            </ul>
+                           
+                        </div>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <style>
+        .exibitionLocation--1 {
+            margin-right: 12rem;
+        }
+        .exibitionDivide {
+            background-color:#777;
+            width: .6rem;
+            height: auto;
+            margin-left: 12.5rem;
+            margin-right: 12.5rem;
+            box-shadow:  0 2rem 5rem rgba(0,0,0,.06);
+        }
+        .exibitionSeparate {
+            display: flex;
+            justify-content: space-between;
+        }
+        .centre {
+            text-align: center;
+        }
+        .containerE {
+            margin: 2rem auto;
+            max-width: 114rem;
+        }
+        .exibitionDates {
+            display: flex;
+            justify-content: space-between;
+        }
+        .exibitionDate1, .exibitionDate2 {
+            font-size: 1.1rem;
+        }
+        .exibitionDate1 {
+            flex: 0 0 32%;
+           
+        }
+        .exibitionDate2 {
+            flex: 1;
+        }
+    </style>
+    
+    <!-- footer -->
+    {% include 'snippets/footer.html' %}
+    </body>
+
+    
+
+    {% endblock %}

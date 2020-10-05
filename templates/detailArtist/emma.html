@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <body class="bg-custom">
+        <!-- nav section -->
+    {% include 'snippets/navbar.html' %}
+    <!-- detaillPiece-->
+    <section class="section-detail">
+        <div class="containerD">
+            <div class="detailImage">
+                <div class="detailCard">
+                    <div class="detailCard__picture">
+                        <img src="../../static/images/SAM_2169.JPG" alt="" class="detailCard__picture--1">
+                    </div>
+                </div>
+            </div>
+            <div class="contentBody">
+                <div class="content">
+                    <h1 class="heading-secondary">
+                        EMMA YUANG
+                    </h1>
+                    <p class="paragraph">
+                        Emma yuang is a Ugandan based Sudanese visual Artist from the Eastern Shore of River Nile, Bor, south sudan specialized in Graphic designs, illustration, acrylic paintings and an activist campaigning for the Rights of humans scientifically, psychologically, philosophically, religiously, economically, socially and politically through creative arts. 
+                        Emma yuang is also the founder of L.E.A.D (Luo, English, Arabic, Dinka) oldschool hiphop rap music which basically spreads the message of love, peace, unity and happiness to the society in order to promote peaceful co existence of the youth in East Africa and Africa at large
+                       
+
+                    </p>
+                   
+                    <h1 class="heading-tetiary--1">
+                        <strong></strong></h1>   
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    
+    
+    <!-- footer -->
+    {% include 'snippets/footer.html' %}
+    </body>
+
+    
+
+    {% endblock %}

@@ -46,3 +46,21 @@ def about_view(request):
     context = {'about': about}
     template = 'about.html'
     return render(request, template, context)
+
+def sai_view(request):
+    sai = SaiArts.objects.all()
+    context = {'sai': sai}
+    template = 'detailArtist/sai.html'
+    return render(request, template, context)
+
+def emma_view(request):
+    emma = SaiArts.objects.all()
+    context = {'emma': emma}
+    template = 'detailArtist/emma.html'
+    return render(request, template, context)
+
+def aramu_view(request):
+    aramu = SaiArts.objects.all()
+    context = {'aramu': aramu}
+    template = 'detailArtist/aramu.html'
+    return render(request, template, context)
