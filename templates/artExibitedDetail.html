@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load thumbnail %}
 
     {% block content %}
     <body class="bg-custom">
@@ -12,7 +13,8 @@
                 <div class="detailCard">
                     {% if artpiece.upload %}
                     <div class="detailCard__picture">
-                        <img src="{{ artpiece.upload.url }}" alt="" class="detailCard__picture--1">
+                        {% thumbnail artpiece.upload 500x700 crop="smart" as im %}
+                        <img src="{{ im.url }}" alt="" class="detailCard__picture--1">
                     </div>
                     {% endif %}
                 </div>
