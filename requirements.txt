@@ -10,7 +10,7 @@ django-crispy-forms==1.9.2
 django-extensions==3.0.7
 django-taggit==0.22.2
 django-widget-tweaks==1.4.8
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 easy-thumbnails==2.7
 idna==2.10
 Markdown==3.0.1
